@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrueFalse.MainPage">
+
+    <ContentPage.Resources>
+        <Color x:Key="PrimaryColor">Tan</Color>
+        <Color x:Key="SecondaryColor">GreenYellow</Color>
+        <Color x:Key="TertiaryColor">#DC00FF</Color>
+
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Label x:Name="Question" Text="" Padding="20" HorizontalOptions="Center" VerticalOptions="Center" FontSize="40" TextColor="{StaticResource TertiaryColor}"></Label>
+
+        <StackLayout Padding="10" VerticalOptions="Start">
+            <Button IsVisible="true" x:Name="TrueButton" Text="True" Clicked="True" BackgroundColor="{StaticResource PrimaryColor}" Padding="2" HeightRequest="60" WidthRequest="2"></Button>
+            <Button IsVisible="true" x:Name="FalseButton" Text="False" Clicked="False" BackgroundColor="{StaticResource SecondaryColor}" Padding="2" HeightRequest="60" WidthRequest="2"></Button>
+            <Button IsVisible="false" x:Name="ResetButton" Text="Reset" Clicked="Reset" BackgroundColor="{StaticResource TertiaryColor}" Padding="2" HeightRequest="60" WidthRequest="2"></Button>
+        </StackLayout>
+        
+
+
+    </StackLayout>
+
+</ContentPage>
